@@ -68,6 +68,11 @@ public class BaseTest {
                 .clickOnSignInButton();
     }
 
+    public void logout() {
+        mainPage.getHeaderElement()
+                .clickOnSignOutButton();
+    }
+
     @AfterSuite
     public void stop() {
         // stop browser

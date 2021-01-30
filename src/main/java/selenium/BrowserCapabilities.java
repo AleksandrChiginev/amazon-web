@@ -23,7 +23,7 @@ public class BrowserCapabilities {
     public static DesiredCapabilities getChromeCapabilities() {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--incognito");
+        options.addArguments("--incognito");
         options.addArguments("--ignore-certificate-errors", "--window-size=1920,1080");
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         return capabilities;
